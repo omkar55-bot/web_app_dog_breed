@@ -14,7 +14,7 @@ UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the trained MobileNetV2 model
-MODEL_PATH = 'model/best_model.h5'
+MODEL_PATH = 'model/20250115-10391736955548-10000-NasNetLarge_Adam_8050_val.h5'
 model = load_model(MODEL_PATH)
 
 # Dog breed class names (update as per your dataset)
