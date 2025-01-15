@@ -52,4 +52,5 @@ def predict():
 
 if __name__ == '__main__':
     os.makedirs(UPLOAD_FOLDER, exist_ok=True)  # Create uploads folder if not exists
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 10000))  # Use Render's provided PORT or default to 10000
+    app.run(host='0.0.0.0', port=port, debug=False)
